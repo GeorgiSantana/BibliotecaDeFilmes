@@ -1,16 +1,11 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <nav id="navbar">
-        <h2>
-          <Link to="/"> Lista de filmes </Link>
-        </h2>
-        <Link to="/filme">Filme</Link>
-        <Link to="/busca">Busca</Link>
-      </nav>
+      <Navbar />
       <h2>Lista de filmes</h2>
       <Outlet />
     </div>
