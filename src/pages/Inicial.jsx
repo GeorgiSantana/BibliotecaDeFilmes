@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import CardFilme from "../components/CardFilme";
+import "./GridFilme.css";
 
 const filmesURL = import.meta.env.VITE_API;
 const apiChave = import.meta.env.VITE_API_KEY;
